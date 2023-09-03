@@ -33,3 +33,20 @@ window.onscroll = () => {
   menuIcon.classList.remove('active')
 }
 // toggle icon navbar
+
+// scroll reveal
+
+scrollReveal({
+  // reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 200,
+})
+
+scrollReveal().reveal('.home-content, .heading', { origin: top })
+scrollReveal().reveal(
+  '.home-img, .service-container, .portfolio-box, .contact form',
+  { origin: bottom }
+)
+scrollReveal().reveal('.home-content h1, .about-img, ', { origin: left })
+scrollReveal().reveal('.home-content p, .about-content, ', { origin: right })
