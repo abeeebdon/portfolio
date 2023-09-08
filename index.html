@@ -63,13 +63,30 @@
         <h2 class="heading">About <span>ME</span></h2>
         <h3>Frontend Developer</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          voluptates, sed natus alias ducimus ipsam dolores excepturi veritatis
-          tempore optio fuga, inventore laudantium vero impedit minima laborum,
-          blanditiis sunt illum esse ut assumenda. Asperiores iusto magnam fugit
-          eius quo ab!
+          I am a highly skilled and experienced
+          <span> frontend developer</span> with expertise in Javascript, HTMl
+          and CSS.
         </p>
-        <a href="" class="btn">Read More</a>
+        <a href="#" id="more" class="btn">Read More</a>
+        <div class="show" id="show">
+          <div class="about-flex" id="about-flex">
+            <h2 class="heading">About <span>ME</span></h2>
+            <i class="bx bx-x" id="about-icon" onclick="cancel()"></i>
+          </div>
+          <p>
+            I am a highly skilled and experienced
+            <span>FRONTEND DEVELOPER</span> with expertise in Javascript, HTML
+            and CSS.
+          </p>
+
+          <p>I work well with others and find it exciting to work in a team.</p>
+          A strong communicator with a passion for building user-friendly and
+          interactive interfaces and solving complex problems.
+          <p>
+            I am a creative and strategic thinker with a proven track record of
+            delivering innovative solutions and exceeding client expectations.
+          </p>
+        </div>
       </div>
     </section>
     <!-- Services section design -->
@@ -118,11 +135,13 @@
       <h2 class="heading">Latest <span>Project</span></h2>
       <div class="portfolio-container">
         <div class="portfoli-box">
-          <img src="./images/desktop.jpg" alt="" />
+          <img src="./images/desktop-preview.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>Web Design</h4>
-            <p>Fylo Landing Page</p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <p>A project from frontend mentor</p>
+            <a href="https://abeebdonfemp.netlify.app" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
 
@@ -137,27 +156,28 @@
           </div>
         </div>
         <div class="portfoli-box">
-          <img src="./images/desktop-preview.jpg" alt="" />
+          <img src="./images/fylo2.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>Web Design</h4>
-            <p>A project from frontend mentor</p>
-            <a href="https://abeebdonfemp.netlify.app" target="_blank"
+            <p>Fylo Landing Page</p>
+            <a href="https://abeebdon-fylo-landing-page.netlify.app"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfoli-box">
+          <img src="./images/sign-up-form.png" height="400px" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>An assignment of ODIN sign up Page</p>
+            <a href="https://abeebdonodinproject.netlify.app" target="_blank"
               ><i class="bx bx-link-external"></i
             ></a>
           </div>
         </div>
         <div class="portfoli-box">
-          <img src="./images/odin.jpg" height="420px" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>A dummy of ODIN sign up Page</p>
-            <a href="https://abeebdonodinproject.netlify.app"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-        <div class="portfoli-box">
-          <img src="./images/download.png" alt="" />
+          <img src="./images/download.png" height="390px" alt="" />
           <div class="portfolio-layer">
             <h4>Web Design</h4>
             <p>A dummy of facebook menu page</p>
@@ -168,19 +188,30 @@
     </section>
     <!-- contact section design -->
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="#" class="contact-form">
+      <h2 class="heading">My <span>Contact</span></h2>
+      <div class="contact-form">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input
+            type="text"
+            placeholder="Full Name"
+            value="Maroof Abeeb Olumide"
+          />
+
+          <br />
+          <input
+            type="email"
+            placeholder="Email Address"
+            value="abeebdon@gmail.com"
+          />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input
+            type="number"
+            placeholder="Mobile Number"
+            value="09075318511"
+          />
         </div>
-        <textarea name="" id="" cols="30" rows="10">Your Message</textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
+      </div>
     </section>
 
     <!-- footer design -->
@@ -194,7 +225,12 @@
     </footer>
 
     <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="app.js"></script>
+    <script>
+      function cancel() {
+        const show = document.getElementById('show')
+        show.style.display = 'none'
+      }
+    </script>
   </body>
 </html>

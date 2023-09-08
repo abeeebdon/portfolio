@@ -34,19 +34,16 @@ window.onscroll = () => {
 }
 // toggle icon navbar
 
-// scroll reveal
+// .................... Adding my about.............................
 
-scrollReveal({
-  // reset: true,
-  distance: '80px',
-  duration: 2000,
-  delay: 200,
-})
+const more = document.getElementById('more')
+more.addEventListener('click', moreEvent)
+function moreEvent() {
+  const show = document.getElementById('show')
+  show.style.display = 'block'
+}
 
-scrollReveal().reveal('.home-content, .heading', { origin: top })
-scrollReveal().reveal(
-  '.home-img, .service-container, .portfolio-box, .contact form',
-  { origin: bottom }
-)
-scrollReveal().reveal('.home-content h1, .about-img, ', { origin: left })
-scrollReveal().reveal('.home-content p, .about-content, ', { origin: right })
+function cancel() {
+  const show = document.getElementById('show')
+  show.style.display = 'none'
+}
