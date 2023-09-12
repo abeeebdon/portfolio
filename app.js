@@ -43,7 +43,3 @@ function moreEvent() {
   show.style.display = 'block'
 }
 
-function cancel() {
-  const show = document.getElementById('show')
-  show.style.display = 'none'
-}
